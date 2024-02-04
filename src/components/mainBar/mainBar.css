@@ -1,0 +1,35 @@
+#main-tab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 16px;
+}
+
+#main-tab button{
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  padding: 4px;
+  margin: 12px;
+  background: none;
+  border-style: none;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+#main-tab button:hover{
+  transform: scale(1.05);
+}
+
+#main-tab img{
+  margin: 0px 4px 0px;
+}
+
+.clear{
+  color: red;
+}
+
+#main-tab .load{
+  background-color: rgb(231, 234, 238);
+}

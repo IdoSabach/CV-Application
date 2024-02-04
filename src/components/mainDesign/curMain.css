@@ -1,0 +1,11 @@
+#curr-main{
+  border-style: solid;
+  margin-top: 16px;
+  border-radius: 16px;
+  height: 550px;
+  background-color: white;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

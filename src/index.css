@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 
 html{
@@ -10,6 +10,7 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(174, 200, 223);
  
 }
 
