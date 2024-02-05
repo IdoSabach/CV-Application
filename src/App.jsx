@@ -1,19 +1,19 @@
 import { useState } from "react";
 import "./app.css"
-import SlideBar from "./components/slideBar/SlideBar";
-import MainTab from "./components/mainBar/MainTab";
-import CurrMain from "./components/mainDesign/CurrMain";
-import Cv from "./components/cv/Cv";
+import SlideBar from "./components/SlideBar/SlideBar";
+import TopBar from "./components/TopBar/TopBar";
+import EditingBlock from "./components/MainDesign/EditingBlock";
+import TheCv from "./components/TheCv/TheCv";
 
 function App() {
   return (
     <div id="app">
       <SlideBar />
       <div>
-        <MainTab />
-        <CurrMain />
+        <TopBar />
+        <EditingBlock />
       </div>
-      <Cv />
+      <TheCv />
     </div>
   );
 }

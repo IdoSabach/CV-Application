@@ -1,4 +1,4 @@
-#cv{
+#theCv{
   border-radius: 16px;
   border-style: solid;
   width: 700px;
@@ -8,12 +8,12 @@
   border-style: none;
 }
 
-#cv header{
+#theCv header{
   background-color: rgb(55, 127, 234);
   border-radius: 16px 16px 0px 0px;
   height: 120px;
 }
 
-#cv main{
+#theCv main{
   background-color: white;
 }

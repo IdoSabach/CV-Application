@@ -1,8 +1,8 @@
-import "./cv.css"
+import "./TheCv.css"
 
-export default function Cv(){
+export default function TheCv(){
   return(
-    <div id="cv">
+    <div id="theCv">
       <header>title</header>
       <main>main</main>
     </div>

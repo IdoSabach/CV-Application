@@ -1,4 +1,4 @@
-import "./buttonSlide.css";
+import "./ButtonSlide.css";
 export default function ButtonSlide({ icon , text , onSelect , isSelect}) {
   return (
       <button id="button-slide" className={isSelect ? "active" : undefined} onClick={onSelect}>

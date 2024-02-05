@@ -1,5 +1,5 @@
 import ButtonSlide from "./ButtonSlide"
-import "./slideBar.css"
+import "./SlideBar.css"
 import { useState } from "react" 
 
 

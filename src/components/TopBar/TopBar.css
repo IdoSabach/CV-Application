@@ -1,4 +1,4 @@
-#main-tab{
+#topBar{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   border-radius: 16px;
 }
 
-#main-tab button{
+#topBar button{
   display: flex;
   font-size: 24px;
   align-items: center;
@@ -18,11 +18,11 @@
   padding: 8px;
 }
 
-#main-tab button:hover{
+#topBar button:hover{
   transform: scale(1.05);
 }
 
-#main-tab img{
+#topBar img{
   margin: 0px 4px 0px;
 }
 
@@ -30,6 +30,6 @@
   color: red;
 }
 
-#main-tab .load{
+#topBar .load{
   background-color: rgb(231, 234, 238);
 }
