@@ -4,20 +4,20 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  font-size: 28px;
+  font-size: 24px;
   margin: 8px 0px 8px;
   border-radius: 12px;
   width: 100%;
   border-style: none;
   padding: 8px 4px 8px;
 }
-img{
+#button-slide img{
   display: flex;
 }
-span{
+#button-slide span{
   padding: 8px 0px 4px;
 }
-p{
+#button-slide p{
   padding: 0px 8px 4px;
 }
 

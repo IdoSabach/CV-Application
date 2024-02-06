@@ -3,12 +3,13 @@ import "./SlideBar.css"
 import { useState } from "react" 
 
 
-export default function SlideBar(){
+export default function SlideBar( {currMain} ){
   const [currBtn , setCurrBtn] = useState("Content")
 
   const handelClick = (text) => {
     console.log(text)
     setCurrBtn(text)
+    currMain(text)
   }
 
 
@@ -19,7 +20,6 @@ export default function SlideBar(){
     <div id="slide-bar">
       <ButtonSlide icon={iconContent} text={"Content"} isSelect={currBtn === "Content"} onSelect={() => handelClick("Content")}/>
       <ButtonSlide icon={iconCustomize} text={"Customize"} isSelect={currBtn === "Customize"} onSelect={() => handelClick("Customize")}/>
-
     </div>
   )
 }

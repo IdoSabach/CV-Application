@@ -6,12 +6,17 @@ import EditingBlock from "./components/MainDesign/EditingBlock";
 import TheCv from "./components/TheCv/TheCv";
 
 function App() {
+  const [currMain , setCurrMain] = useState("Content")
+  
+  const handelMain = (name) =>{
+    setCurrMain(name)
+  }
   return (
     <div id="app">
-      <SlideBar />
+      <SlideBar currMain={handelMain} />
       <div>
         <TopBar />
-        <EditingBlock />
+        <EditingBlock currMainEdit={currMain}/>
       </div>
       <TheCv />
     </div>
