@@ -2,6 +2,7 @@
   background-color: white;
   padding: 16px;
   border-radius: 16px;
+  margin: 0px 0px 12px;
 }
 
 #personalDetails p{
@@ -39,4 +40,8 @@
   display: flex;
   background: none;
   border-style: none;
+}
+
+#personalDetails button:active{
+  transform: scale(0.95);
 }

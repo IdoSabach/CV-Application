@@ -15,7 +15,7 @@ export default function PersonalDetails() {
       <div className="topSlide">
         <p>Personal Details</p>
         <button onClick={handleOpen}>
-          <span class="material-symbols-outlined">menu_open</span>
+          <span className="material-symbols-outlined">menu_open</span>
         </button>
       </div>
       {isOpen ? (
