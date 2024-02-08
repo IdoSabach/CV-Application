@@ -3,10 +3,26 @@ import PersonalDetails from "./PersonalDetails";
 import CreateDesignBlock from "./CreateDesignBlock";
 import Customize from "./Customize";
 
-export default function EditingBlock({ currMainEdit }) {
+export default function EditingBlock({ currMainEdit , isName , isEmail , isPhone , isAddress}) {
+  const handleNameChange = (newName) => {
+    isName(newName)
+  };
+
+  const handleEmailChange = (newEmail) => {
+    isEmail(newEmail)
+  };
+
+  const handlePhoneChange = (newPhone) => {
+    isPhone(newPhone)
+  };
+
+  const handleAddressChange = (newAddress) => {
+    isAddress(newAddress)
+  };
+
   let content = (
     <div>
-      <PersonalDetails />
+      <PersonalDetails onNameChange={handleNameChange} onEmailChange={handleEmailChange} onPhoneChange={handlePhoneChange} onAddressChange={handleAddressChange}/>
       <CreateDesignBlock
         title={"Education"}
         addBtn={"Education"}
