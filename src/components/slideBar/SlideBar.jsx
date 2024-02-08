@@ -13,8 +13,8 @@ export default function SlideBar( {currMain} ){
   }
 
 
-  const iconContent = <img width="60" height="60" src="https://img.icons8.com/dotty/80/e-learning.png" alt="e-learning"/>
-  const iconCustomize = <img width="50" height="50" src="https://img.icons8.com/ios/100/maintenance--v1.png" alt="maintenance--v1"/>
+  const iconContent = <img width="50" height="50" src="https://img.icons8.com/dotty/80/e-learning.png" alt="e-learning"/>
+  const iconCustomize = <img width="40" height="40" src="https://img.icons8.com/ios/100/maintenance--v1.png" alt="maintenance--v1"/>
 
   return (
     <div id="slide-bar">

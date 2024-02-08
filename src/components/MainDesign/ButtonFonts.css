@@ -1,0 +1,8 @@
+#button-font button{
+  background: none;
+}
+
+
+#button-font:active{
+  transform: scale(0.95);
+}

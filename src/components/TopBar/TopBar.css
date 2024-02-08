@@ -1,20 +1,21 @@
 #topBar{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
   border-radius: 16px;
+  width: 450px;
 }
 
 #topBar button{
   display: flex;
-  font-size: 24px;
+  font-size: 20px;
   align-items: center;
   padding: 4px;
   margin: 12px;
   background: none;
   border-style: none;
-  border-radius: 16px;
+  border-radius: 4px;
   padding: 8px;
 }
 

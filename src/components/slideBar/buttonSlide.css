@@ -4,12 +4,12 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  font-size: 24px;
-  margin: 8px 0px 8px;
+  font-size: 20px;
+  margin: 4px 0px 4px;
   border-radius: 12px;
   width: 100%;
   border-style: none;
-  padding: 8px 4px 8px;
+  padding: 4px 4px 4px;
 }
 #button-slide img{
   display: flex;

@@ -1,6 +1,7 @@
 import "./EditingBlock.css";
 import PersonalDetails from "./PersonalDetails";
 import CreateDesignBlock from "./CreateDesignBlock";
+import Customize from "./Customize";
 
 export default function EditingBlock({ currMainEdit }) {
   let content = (
@@ -29,7 +30,9 @@ export default function EditingBlock({ currMainEdit }) {
     </div>
   );
 
-  let customize = <p>customize</p>;
+  let customize = (
+    <Customize />
+  )
 
   return (
     <div id="editingBlock">

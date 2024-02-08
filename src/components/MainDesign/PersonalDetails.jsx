@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function PersonalDetails() {
   const [isOpen, setIsOpen] = useState(false);
+  // const [isName , setName] = useState("")
   const handleOpen = () => {
     if(isOpen){
       setIsOpen(false)
@@ -22,7 +23,7 @@ export default function PersonalDetails() {
         <form action="">
           <div>
             <label htmlFor="">Full Name</label>
-            <input type="text" placeholder="First and last name" />
+            <input type="text" placeholder="First and last name"/>
           </div>
           <div>
             <label htmlFor="">Email</label>
