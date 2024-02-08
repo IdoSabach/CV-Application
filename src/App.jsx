@@ -31,11 +31,25 @@ function App() {
     setCurrAddress(newAddress);
   };
 
+  const handleAddTextToCv = () =>{
+    setCurrName('Ido Sabach')
+    setCurrEmail('Idosabach11@gmail.com')
+    setCurrPhone('0537205476')
+    setCurrAddress('yeruham')
+  }
+
+  const handleRmTextToCv = () => {
+    setCurrName("Welcome to CV Application")
+    setCurrEmail("")
+    setCurrPhone("")
+    setCurrAddress("")
+  };
+
   return (
     <div id="app">
       <SlideBar currMain={handelMain} />
       <div>
-        <TopBar />
+        <TopBar addText={handleAddTextToCv} rmText={handleRmTextToCv}/>
         <EditingBlock
           currMainEdit={currMain}
           isName={handelName}
