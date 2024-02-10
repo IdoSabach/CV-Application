@@ -1,54 +1,100 @@
+import React from "react";
 import "./EditingBlock.css";
 import PersonalDetails from "./PersonalDetails";
 import CreateDesignBlock from "./CreateDesignBlock";
 import Customize from "./Customize";
 
-export default function EditingBlock({ currMainEdit , isName , isEmail , isPhone , isAddress}) {
-  const handleNameChange = (newName) => {
-    isName(newName)
+export default function EditingBlock({
+  currMainEdit,
+  isName,
+  isEmail,
+  isPhone,
+  isAddress,
+  isSchool,
+  isDegree,
+  isStartDate,
+  isEndDate,
+  isLocation
+}) {
+  const handleChange = (field, value) => {
+    switch (field) {
+      case "name":
+        isName(value);
+        break;
+      case "email":
+        isEmail(value);
+        break;
+      case "phone":
+        isPhone(value);
+        break;
+      case "address":
+        isAddress(value);
+        break;
+      case "school":
+        isSchool(value);
+      case "degree":
+        isDegree(value);
+      case "startDate":
+        isStartDate(value);
+      case "endDate":
+        isEndDate(value);
+      case "location":
+        isLocation(value);
+      default:
+        break;
+    }
   };
 
-  const handleEmailChange = (newEmail) => {
-    isEmail(newEmail)
-  };
-
-  const handlePhoneChange = (newPhone) => {
-    isPhone(newPhone)
-  };
-
-  const handleAddressChange = (newAddress) => {
-    isAddress(newAddress)
-  };
-
-  let content = (
+  const content = (
     <div>
-      <PersonalDetails onNameChange={handleNameChange} onEmailChange={handleEmailChange} onPhoneChange={handlePhoneChange} onAddressChange={handleAddressChange}/>
-      <CreateDesignBlock
-        title={"Education"}
-        addBtn={"Education"}
-        labelOne={"School"}
-        inputOne={"Enter School / University"}
-        labelTwo={"Degree"}
-        inputTow={"Enter Degree / Field Of Study"}
-        labelThree={"Location"}
-        inputThree={"Enter Location"}
+      <PersonalDetails
+        onNameChange={(newName) => handleChange("name", newName)}
+        onEmailChange={(newEmail) => handleChange("email", newEmail)}
+        onPhoneChange={(newPhone) => handleChange("phone", newPhone)}
+        onAddressChange={(newAddress) => handleChange("address", newAddress)}
       />
       <CreateDesignBlock
-        title={"Experience"}
-        addBtn={"Experience"}
-        labelOne={"Company Name"}
-        inputOne={"Enter Company Name"}
-        labelTwo={"Position Title"}
-        inputTow={"Enter Position Title"}
-        labelThree={"Location"}
-        inputThree={"Enter Location"}
+        title="Education"
+        addBtn="Education"
+        labelOne="School"
+        inputOne="Enter School / University"
+        labelTwo="Degree"
+        inputTwo="Enter Degree / Field Of Study"
+        labelThree="Location"
+        inputThree="Enter Location"
+        onSchoolChange={(newSchool) => handleChange("school", newSchool)}
+        onDegreeChange={(newDegree) => handleChange("degree", newDegree)}
+        onStartDateChange={(newStartDate) =>
+          handleChange("startDate", newStartDate)
+        }
+        onEndDateChange={(newEndDate) => handleChange("endDate", newEndDate)}
+        onLocationChange={(newLocation) =>
+          handleChange("location", newLocation)
+        }
+      />
+      <CreateDesignBlock
+        title="Experience"
+        addBtn="Experience"
+        labelOne="Company Name"
+        inputOne="Enter Company Name"
+        labelTwo="Position Title"
+        inputTwo="Enter Position Title"
+        labelThree="Location"
+        inputThree="Enter Location"
+        onSchoolChange={(newSchool) => handleChange("school", newSchool)}
+        onDegreeChange={(newDegree) => handleChange("degree", newDegree)}
+        onStartDateChange={(newStartDate) =>
+          handleChange("startDate", newStartDate)
+        }
+        onEndDateChange={(newEndDate) => handleChange("endDate", newEndDate)}
+        onLocationChange={(newLocation) =>
+          handleChange("location", newLocation)
+        }
       />
     </div>
   );
 
-  let customize = (
-    <Customize />
-  )
+  const customize = <Customize />;
 
   return (
     <div id="editingBlock">

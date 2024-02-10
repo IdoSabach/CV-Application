@@ -11,6 +11,11 @@ function App() {
   const [currEmail, setCurrEmail] = useState("");
   const [currPhone, setCurrPhone] = useState("");
   const [currAddress, setCurrAddress] = useState("");
+  const [currSchool , setCurrSchool] = useState("")
+  const [currDegree , setCurrDegree] = useState("")
+  const [currStartDate , setCurrStartDate] = useState("")
+  const [currEndDate , setCurrEndDate] = useState("")
+  const [currLocation , setCurrLocation] = useState("")
 
   const handelMain = (name) => {
     setCurrMain(name);
@@ -45,6 +50,22 @@ function App() {
     setCurrAddress("")
   };
 
+  const handleSchool = (newSchool) =>{
+    setCurrSchool(newSchool)
+  }
+  const handleDegree = (newDegree) =>{
+    setCurrDegree(newDegree)
+  }
+  const handleStartDate = (newStartDate) =>{
+    setCurrStartDate(newStartDate)
+  }
+  const handleEndDate = (newEndDate) =>{
+    setCurrEndDate(newEndDate)
+  }
+  const handleLocation = (newLocation) =>{
+    setCurrLocation(newLocation)
+  }
+
   return (
     <div id="app">
       <SlideBar currMain={handelMain} />
@@ -56,6 +77,11 @@ function App() {
           isEmail={handelEmail}
           isPhone={handelPhone}
           isAddress={handelAddress}
+          isSchool={handleSchool}
+          isDegree={handleDegree}
+          isStartDate={handleStartDate}
+          isEndDate={handleEndDate}
+          isLocation={handleLocation}
         />
       </div>
       <TheCv
@@ -63,6 +89,11 @@ function App() {
         mail={currEmail}
         phone={currPhone}
         address={currAddress}
+        school={currSchool}
+        degree={currDegree}
+        startDate={currStartDate}
+        endDate={currEndDate}
+        location={currLocation}
       />
     </div>
   );

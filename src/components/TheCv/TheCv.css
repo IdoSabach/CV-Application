@@ -33,3 +33,21 @@
   background-color: white;
   padding: 16px;
 }
+
+#theCv .topSlide{
+  background-color: rgb(220, 220, 220);
+  border-radius: 0px;
+  height: 25px;
+}
+
+#theCv .lineEducation{
+  display: flex;
+  width: 100%;
+  padding: 12px 0px 12px;
+  gap: 32px;
+  text-align: left;
+}
+
+#theCv .school{
+  font-weight: 700;
+}
