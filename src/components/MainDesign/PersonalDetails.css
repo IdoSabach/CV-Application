@@ -45,3 +45,31 @@
 #personalDetails button:active{
   transform: scale(0.95);
 }
+
+#personalDetails .box-btn{
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  text-align: center;
+  gap: 16px;
+}
+
+#personalDetails .save-btn{
+  margin: 12px 0px 0px;
+  padding: 4px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: rgb(95, 207, 255);
+  width: 100%;
+  text-align: center;
+}
+
+#personalDetails .clear-btn{
+  margin: 12px 0px 0px;
+  padding: 4px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: rgb(255, 112, 112);
+  width: 100%;
+  text-align: center;
+}
