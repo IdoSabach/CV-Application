@@ -1,4 +1,4 @@
-#createDesignBlock{
+.createDesignBlock{
   background-color: white;
   padding: 16px;
   border-radius: 16px;
@@ -8,38 +8,38 @@
   align-items: center;
 }
 
-#createDesignBlock .formEducation{
+.createDesignBlock .formEducation{
   width: 100%;
 }
 
-#createDesignBlock .dateInput{
+.createDesignBlock .dateInput{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#createDesignBlock .dateInput div{
+.createDesignBlock .dateInput div{
   width: 45%;
 }
 
-#createDesignBlock .lineButtons{
+.createDesignBlock .lineButtons{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 8px 0px 4px;
 }
 
-#createDesignBlock .miniLineButtons{
+.createDesignBlock .miniLineButtons{
   display: flex;
   flex-direction: row;
   gap: 12px;
   
 }
 
-#createDesignBlock .miniLineButtons .save{
+.createDesignBlock .miniLineButtons .save{
   background-color: rgb(162, 218, 252);
 }
 
-#createDesignBlock .lineButtons button{
+.createDesignBlock .lineButtons button{
   font-size: 20px;
   background:none;
   border-width: 1.5px;
@@ -47,27 +47,27 @@
   border-radius: 4px;
 }
 
-#createDesignBlock .lineButtons button:active{
+.createDesignBlock .lineButtons button:active{
   transform: scale(0.95);
 }
 
-#createDesignBlock p{
+.createDesignBlock p{
   font-size: 32px;
   margin: 4px 0px 8px;
 }
 
-#createDesignBlock div{
+.createDesignBlock div{
   display: flex;
   flex-direction: column;
   padding: 4px 0px 4px;
 }
 
-#createDesignBlock label{
+.createDesignBlock label{
   font-size: 20px;
   margin: 4px 0px 4px;
 }
 
-#createDesignBlock input{
+.createDesignBlock input{
   font-size: 16px;
   border-radius: 12px;
   padding: 4px 8px 4px;
@@ -75,7 +75,7 @@
   border-style: none;
 }
 
-#createDesignBlock .topSlide{
+.createDesignBlock .topSlide{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,14 +83,14 @@
   width: 100%;
 }
 
-#createDesignBlock .btnOpen{
+.createDesignBlock .btnOpen{
   display: flex;
   background: none;
   border-style: none;
 } 
 
 
-#createDesignBlock .add-education{
+.createDesignBlock .add-education{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +105,25 @@
 }
 
 
-#createDesignBlock span:active{
+.createDesignBlock span:active{
   transform: scale(0.95);
+}
+
+.createDesignBlock .listLine{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: rgb(206, 206, 206);
+  font-size: 16px;
+  padding: 4px;
+}
+
+.createDesignBlock button{
+  background: none;
+  border-style: none;
+  margin: 4px 8px 4px
+}
+
+.createDesignBlock img{
+  display: flex;
 }

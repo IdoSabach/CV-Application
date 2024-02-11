@@ -98,6 +98,7 @@ export default function PersonalDetails({
               type="text"
               id="phone"
               name="phone"
+              required
               placeholder="Enter phone number"
               value={formData.phone}
               onChange={handleChange}
@@ -109,6 +110,7 @@ export default function PersonalDetails({
               type="text"
               id="address"
               name="address"
+              required
               placeholder="City, Country"
               value={formData.address}
               onChange={handleChange}

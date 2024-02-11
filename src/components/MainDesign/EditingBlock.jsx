@@ -14,7 +14,7 @@ export default function EditingBlock({
   isDegree,
   isStartDate,
   isEndDate,
-  isLocation
+  isLocation,
 }) {
   const handleChange = (field, value) => {
     switch (field) {
@@ -54,6 +54,7 @@ export default function EditingBlock({
         onAddressChange={(newAddress) => handleChange("address", newAddress)}
       />
       <CreateDesignBlock
+        id={1}
         title="Education"
         addBtn="Education"
         labelOne="School"
@@ -73,6 +74,7 @@ export default function EditingBlock({
         }
       />
       <CreateDesignBlock
+        id={2}
         title="Experience"
         addBtn="Experience"
         labelOne="Company Name"

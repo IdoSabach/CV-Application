@@ -15,7 +15,7 @@ export default function TheCv({ name, mail, phone, address , startDate , endDate
         <header className="topSlide">Education</header>
         <div className="lineEducation">
           <div className="firstBox">
-            <div className="date">{startDate}-{endDate}</div>
+            <div className="date">{startDate} - {endDate}</div>
             <div className="location">{location}</div>
           </div>
           <div className="secondBox">
