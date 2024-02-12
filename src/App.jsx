@@ -41,6 +41,7 @@ function App() {
     setCurrEmail('Idosabach11@gmail.com')
     setCurrPhone('0537205476')
     setCurrAddress('yeruham')
+    
   }
 
   const handleRmTextToCv = () => {
@@ -48,6 +49,11 @@ function App() {
     setCurrEmail("")
     setCurrPhone("")
     setCurrAddress("")
+    setCurrSchool("")
+    setCurrDegree("")
+    setCurrStartDate("")
+    setCurrEndDate("")
+    setCurrLocation("")
   };
 
   const handleSchool = (newSchool) =>{

@@ -113,12 +113,12 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  background-color: rgb(206, 206, 206);
+  /* background-color: rgb(206, 206, 206); */
   font-size: 16px;
   padding: 4px;
 }
 
-.createDesignBlock button{
+.createDesignBlock .closeBtn{
   background: none;
   border-style: none;
   margin: 4px 8px 4px

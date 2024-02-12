@@ -127,7 +127,7 @@ export default function Education({
           {formDataArray.map((data, index) => (
             <li key={index}>
               {data.school}, {data.degree}
-              <button onClick={() => handleDelete(index)}>
+              <button onClick={() => handleDelete(index)} className="closeBtn">
                 <img
                   width="15"
                   height="15"
